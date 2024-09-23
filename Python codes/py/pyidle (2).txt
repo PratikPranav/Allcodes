@@ -1,0 +1,125 @@
+ a=5
+>>> type(a)
+<class 'int'>
+>>>
+>>> b=2.5
+>>> type(b)
+<class 'float'>
+>>>
+>>> c=123456789
+>>> type(c)
+<class 'int'>
+>>> c=123456789l
+  File "<stdin>", line 1
+    c=123456789l
+              ^
+SyntaxError: invalid decimal literal
+>>> c=123456789L
+  File "<stdin>", line 1
+    c=123456789L
+              ^
+SyntaxError: invalid decimal literal
+>>> c=123456786l
+  File "<stdin>", line 1
+    c=123456786l
+              ^
+SyntaxError: invalid decimal literal
+>>>
+>>>
+>>> y=2+5j
+>>> y
+(2+5j)
+>>> y.real
+2.0
+>>> y.img
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'complex' object has no attribute 'img'. Did you mean: 'imag'?
+>>> y.imag
+5.0
+>>>
+>>>
+>>> c=2+5
+>>> c
+7
+>>>
+>>> d=2
+>>> e=3.5
+>>> f=d+e
+>>> f
+5.5
+>>> type(f)
+<class 'float'>
+>>>
+>>> x=3-2
+>>> x
+1
+>>> y=x*2.0
+>>> y
+2.0
+>>> z=5/2
+>>> z
+2.5
+>>> //string
+  File "<stdin>", line 1
+    //string
+    ^^
+SyntaxError: invalid syntax
+>>>
+>>> s="hello friends"
+>>> type(s)
+<class 'str'>
+>>> t="how are you"
+>>> r=s+t
+>>> r
+'hello friendshow are you'
+>>> r=s+ t
+>>> r
+'hello friendshow are you'
+>>> length(y)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'length' is not defined
+>>> length(r)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'length' is not defined
+>>> len(r)
+24
+>>> x="100"
+>>> type(x)
+<class 'str'>
+>>> y=int(x)
+>>> y
+100
+>>> type(y)
+<class 'int'>
+>>>
+>>>
+>>> a="pratik"
+>>> a.upper()
+'PRATIK'
+>>> a.lower()
+'pratik'
+>>>
+>>>
+>>> a[2]
+'a'
+>>> a[2:]
+'atik'
+>>> a[2:-1]
+'ati'
+>>> a[2:4]
+'at'
+>>> a[2:5]
+'ati'
+>>>
+>>>
+>>> a.strip(0)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: strip arg must be None or str
+>>> a.strip('0')
+'pratik'
+>>> a.strip('p')
+'ratik'
