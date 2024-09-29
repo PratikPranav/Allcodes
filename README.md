@@ -1,2 +1,2 @@
-# c-codes
+# cpp codes
 codes during college time
